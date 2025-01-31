@@ -88,32 +88,6 @@
 			text-align: center;
 		}
     </style>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        function makeDod() {
-            emailjs.init("8GR1zxoer7PKsFSVI");
-            let userMessage = prompt("Enter your prompt:");
-            
-            if (!userMessage) {
-                window.alert("User cancelled the prompt.");
-                return;
-            }
-
-            const templateParams = {
-                message: userMessage, 
-            };
-
-            emailjs.send('service_kgyvm6o', 'template_typixsi', templateParams)
-                .then(response => {
-                    window.alert("Prompt sent successfully! Check \"Suggestions etc.\" for the status.");
-                    console.log("EmailJS response:", response);
-                })
-                .catch(error => {
-                    console.error("EmailJS error:", error);
-                    window.alert("Failed to register prompt. Please try again.");
-                });
-        }
-    </script>
     <script>
         document.addEventListener('keydown', function(event) {
             if (event.key === 'e') {
@@ -134,37 +108,33 @@
             win.document.body.appendChild(iframe);
         }
 		function openDev() {
-			openURL("https://ENTER YOUR WEBSITE NAME HERE/dev")
+			openURL("https://rpicode.github.io/games/dev")
 		}
         function openDino() {
-            openURL("https://ENTER YOUR WEBSITE NAME HERE/dino");
+            openURL("https://rpicode.github.io/games/dino");
         }
         function openMC() {
-            openURL("https://theult1mateh4ck3r.github.io/games/");
+            openURL("https://uec-k2wp.vercel.app/clients/resent.html");
         }
         function openMonGG() {
-            openURL("https://theult1mateh4ck3r.github.io/mathematics");
+            openURL("https://monkeygg5.github.io");
         }
         function openBidoof() {
-            openURL("https://hackersforli123fe.github.io/pical/");
+            openURL("https://hackersforli123fe.github.io/pical");
         }
         function openSlope() {
-            openURL("https://hackersforli123fe.github.io/pical/slope/");
+            openURL("https://hackersforli123fe.github.io/pical/slope");
         }
         function openNeal() {
             openURL("https://neal.fun/");
         }
         function openSug() {
-            openURL("https://ENTER YOUR WEBSITE NAME HERE/dev-notes");
+            openURL("https://rpicode.github.io/games/dev-notes");
         }
-		window.alert("I have had to shut this down due to a teacher.")
-		window.alert("It will be gone by Monday Afternoon.")
-	    window.alert("Please email me to \"revive\" this by yourself")
-		window.location.href = "https://classroom.google.com/"
     </script>
 </head>
 <body>
-    <div class="header">Lumenoxs</div>
+    <div class="header">Lumenoxs - Gamin&#8217; Time</div>
 
     <div class="container">
         <a href="/games/dino" class="button" target="_blank" onclick="openDino()">
@@ -172,40 +142,29 @@
             <span>Chrome Dino</span>
         </a>
 
-        <a href="https://theult1mateh4ck3r.github.io/games" class="button" target="_blank" onclick="openMC()">
-            <img src="images/mc.png" alt="Eaglecraft">
-            <span>Eaglecraft</span>
+        <a href="https://uec-k2wp.vercel.app/clients/resent.html" class="button" target="_blank" onclick="openMC()">
+            <img src="images/mc.png" alt="Resent Client">
+            <span>Resent Client</span>
         </a>
 
-        <a href="https://theult1mateh4ck3r.github.io/mathematics" class="button" target="_blank" onclick="openMonGG()">
-            <img src="images/monkeygg2.png" alt="MonkeyGG2">
-            <span>MonkeyGG2</span>
+        <a href="https://monkeygg5.github.io/mathematics" class="button" target="_blank" onclick="openMonGG()">
+            <img src="images/monkeygg2.png" alt="MonkeyGG5">
+            <span>MonkeyGG5</span>
         </a>
 
-        <a class="button" target="_blank" onclick="openBidoof()">
-            <img src="images/bidoofery.png" alt="Bidoofery">
-            <span>Bidoofery</span>
-        </a>
-
-        <a class="button" target="_blank" onclick="openSlope()">
+        <a href="https://hackersforli123fe.github.io/pical/slope" class="button" target="_blank" onclick="openSlope()">
             <img src="images/slope.png" alt="Slope">
             <span>Slope</span>
         </a>
-
-        <a href="https://neal.fun" class="button" target="_blank">
-            <img src="images/neal.png" alt="neal.fun">
-            <span>neal.fun</span>
-        </a>
-		<!--- ENTER YOUR WEBSITE NAME BELOW --- ENTER YOUR WEBSITE NAME BELOW --- ENTER YOUR WEBSITE NAME BELOW --->
-		<a href="https://ENTER YOUR WEBSITE NAME HERE/dev" class="button" target="_blank">
+		
+		<a href="https://rpicode.github.io/games/dev" class="button" target="_blank">
              <img src="images/404-glitch.png" alt="Hmmm...">
              <span>DEVS ONLY</span>
         </a>
 		
-		<!--- ENTER YOUR WEBSITE NAME BELOW --- ENTER YOUR WEBSITE NAME BELOW --- ENTER YOUR WEBSITE NAME BELOW --->
-        <a href="https://ENTER YOUR WEBSITE NAME HERE/dev-notes" class="button" target="_blank" onclick="openSug()">
-            <img src="images/404-glitch.png" alt="Suggestions & Whatever">
-            <span>Suggestions etc.</span>
+		<a href="https://rpicode.github.io/games/notes" class="button" target="_blank" onclick="openSug()">
+            <img src="images/404-glitch.png" alt="Notices">
+            <span>Notices</span>
         </a>
 
 		<a href="https://pressplay.top/movies" class="button" target="_blank">
@@ -214,8 +173,8 @@
         </a>
     </div>
 
-    <button class="idea" onclick="makeDod()">Click to add an idea or update</button>
+    <button class="idea" onclick="mainBack()">Back to<br><b>OPERATION 500</b></button>
 
-    <div class="subtitle">V1.11.4<br>Reborn!</div>
+    <div class="subtitle">V1.11.4<br>REBORN!!!</div>
 </body>
 </html>
